@@ -1,18 +1,36 @@
 <?php
 session_start();
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header('Location: login.php');
+
+// Check if user is logged in
+if (!isset($_SESSION['user_type'])) {
+    header("Location: login.php");
     exit();
 }
+
+// Redirect based on user type
+switch ($_SESSION['user_type']) {
+    case 'admin':
+        header("Location: admin_dashboard.php");
+        break;
+    case 'creator':
+        header("Location: creator_dashboard.php");
+        break;
+    case 'normal':
+        header("Location: user_dashboard.php");
+        break;
+    default:
+        header("Location: login.php");
+        break;
+}
+exit();
+?>
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Dashboard</title>
-    <style>
-        ul { list-style-type: none; padding: 0; }
-        li { border: 1px solid #000; padding: 5px; margin: 5px 0; }
-    </style>
+            <link rel="stylesheet" type="text/css" href="dashboard.css">
+
 </head>
 <body>
 

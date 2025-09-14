@@ -1,0 +1,21 @@
+.button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    .button:hover {
+        background: #45a049;
+    }
+
+.logout {
+    background: #f44336;
+}
+
+    .logout:hover {
+        background: #da190b;
+    }

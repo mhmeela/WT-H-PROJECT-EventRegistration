@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #e8f0fe;
+    padding: 30px;
+}
+
+form {
+    background: #ffffff;
+    padding: 25px;
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #4a90e2;
+}
+
+div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background: #4a90e2;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background: #357ab8;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
